@@ -41,7 +41,7 @@ class Field {
                 this.Xlocation += 1;
                 break;
             default:
-                console.log('Please enter W for up, S for down, A for left or D for right');
+                console.log('Wrong input, please enter W for up, S for down, A for left or D for right. Input must be capitalized.');
                 this.userInput();
                 break;
         }
@@ -119,7 +119,7 @@ class Field {
             this.print();
             this.userInput();
             if(!this.validPosition()) {
-                console.log('You move out of the the maze, try again!');
+                console.log('You move out of the maze, try again!');
                 play = false;
                 break;
             } else if (this.fallHole()) {
